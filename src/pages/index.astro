@@ -86,10 +86,7 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 
 		<Section title='About'>
 			<p class='text-muted-foreground'>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque quia omnis
-				consectetur, voluptas praesentium veniam blanditiis ratione asperiores accusantium laborum
-				odit commodi quis deserunt incidunt et dolor iure ut! Lorem ipsum dolor sit, amet
-				consectetur adipisicing elit. Alias quia, doloribus ut beatae perspiciatis voluptatibus.
+				I make computers do stuff.
 			</p>
 		</Section>
 		{
@@ -108,60 +105,81 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 
 		<Section title='Experience'>
 			<Card
-				heading='Lorem Ipsum'
-				subheading='Sit amet consectetur'
-				date='Dec 2022 - Nov 2023'
-				imagePath='/src/assets/about-astro.png'
-				altText='Lorem, ipsum dolor sit'
+				heading='Cloud Infrastructure Analyst'
+				subheading='Arcturus Studios'
+				date='Sep 2020 - Oct 2024'
+				imagePath='/src/assets/arcturus.png'
+				altText='A stylized, geometric, spiralling, star-like logo.'
 				imageClass='h-12 w-auto md:-left-16'
 			>
 				<ul class='ml-4 list-disc text-muted-foreground'>
-					<li>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis recusandae, ut
-						molestiae laboriosam pariatur!
-
-						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, pariatur!</li>
-					</li>
+					<li>Designed and built a custom auto-scaling system using Python and AWS Lambda to bring compute node boot time down from 30+ minutes to <60 seconds, significantly improving customer experience and reducing cluster running costs by >15%</li>
+					<li>Redesigned and optimized logging ingestion system, eliminating a primary source of core API downtime/instability and enabling cloud an increase of cloud processing speed/scale of 500%</li>
+					<li>Reworked logging API and HoloEdit log viewer logic to support pagination and caching, improving stability/readability and reducing seconds of log loading time down to a fraction of a second</li>
+					<li>Fixed bugs in and improved accuracy of billing logic and built out API endpoints to allow sales team to preemptively identify customers that would need to purchase additional compute hours</li>
+					<li>Built out APIs for integration with Salesforce in order to automatically provision user accounts and resources for new customers</li>
+					<li>Diagnosed and debugged audio and video streaming issues to reduce jitter and ensure smooth and stable playback</li>
+					<li>Built out and hardened IaC, transforming a checklist-based manual deployment strategy into a pushbutton CI system using Terraform, Gradle, and Jenkins</li>
+					<li>Designed a dedicated installer for HoloEdit and developed an automated build and packaging system for HoloSuite</li>
+					<li>Designed and developed HoloEdit's audio system including live playback, nonlinear multi-track editing workflows, online and offline rendering, and sample/clip management, allowing customers to perform all of their volumentric video editing from within HoloEdit</li>
+					<li>Achitected a Kubernetes-based solution for installing and hosting Arcturus's entire cloud compute system on-prem</li>
+					<li>Parallelized HoloEdit client asset uploads, bringing work submission time down from minutes to seconds</li>
+					<li>Supervised and participated in releases and deployments</li>
 				</ul>
 			</Card>
 			<Card
-				heading='Lorem Ipsum'
-				subheading='Sit amet consectetur'
-				date='Dec 2022 - Nov 2023'
-				imagePath='/src/assets/about-astro.png'
-				altText='Lorem, ipsum dolor sit'
+				heading='Senior Software Engineer'
+				subheading='Grasshopper (Citrix/GoTo)'
+				date='March 2013 - July 2020'
+				imagePath='/src/assets/grasshopper.png'
+				altText='A minimal, stylized anthropomorphic insect.'
 				imageClass='h-12 w-auto md:-left-16'
-			/>
+			>
+				<ul class='ml-4 list-disc text-muted-foreground'>
+					<li>Developed, debugged, and maintained APIs, Cloud Services, multiple web UIs, and mobile apps using a mix of C\#, C, Python, Java, Ruby, and Objective C</li>
+					<li>Lead the design and development of multiple dashboards to monitor Grasshopper's interactive voice response (IVR) hardware, allowing the operations team to preemptively identify failing hardware and increasing availability of Grasshoppers IVR systems</li>
+					<li>Architected and lead the implementation of backend infrastructure and mobile app features for Grashopper's SMS/MMS system</li>
+					<li>Built and optimized Oracle stored procedures and aggregated data for business analytics</li>
+					<li>Lead the design and implementation of a system for migrating the entirety of Grasshopper customer IVR data from on-prem NFS/Oracle storage to a new, highly available, cloud-hosted system</li>
+					<li>Redesigned microservice interconnects (.NET/WCF) to reduce load on Grasshopper's Oracle database and improve responsivity of REST APIs</li>
+					<li>Consolidated and normalized service logging across Grasshopper's tech stack using Graylog. Added profiling to API routes in order to identify opportunities for optimization</li>
+					<li>Implemented redesign of Grasshopper web portal's login page using ASP.NET, HTML, CSS, and JQuery</li>
+					<li>Mentored and assisted other developers</li>
+					<li>Supervised and participated in releases and deployments</li>
+				</ul>
+			</Card>
+			<Card
+			heading='Web Developer'
+			subheading='Engaging Computing Group'
+			date='August 2007 - March 2013'
+			imagePath='/src/assets/ecg.png'
+			altText='A stylized human head with gears in its brain.'
+			imageClass='h-12 w-auto md:-left-16'
+		>
+			<ul class='ml-4 list-disc text-muted-foreground'>
+        <li>Developed data sharing and visualization tools using CoffeeScript, LAMP, Ruby on Rails,
+					HighCharts, Google Charts, and HTML Canvas</li>
+				<li>Built and maintained systems for manipulating large datasets for presentation and storage</li>
+				<li>Helped lead design and implementation of new Ruby-on-Rails-based system to replace an outdated, LAMP-stack-based implementation of iSENSE</li>
+				<li>Trained new recruits and assisted them in setting up local development environments</li>
+				<li>Engaged in brainstorming sessions and participated in formulating solutions to improve user experience</li>
+			</ul>
+		</Card>
 		</Section>
 
 		<Section title='Education'>
 			<Card
-				heading='Lorem Ipsum'
-				subheading='Sit amet consectetur'
-				date='Dec 2022 - Nov 2023'
-				imagePath='/src/assets/about-astro.png'
-				altText='Lorem, ipsum dolor sit'
+				heading='B.S. in Computer Science'
+				subheading='University of Massachusetts, Lowell'
+				date='2007 - 2012'
+				imagePath='/src/assets/umasslowell.jpeg'
+				altText='UMass Lowell text logo.'
 				imageClass='h-12 w-auto md:-left-16'
 			>
-				<ul class='ml-4 list-disc text-muted-foreground'>
-					<li>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis recusandae, ut
-						molestiae laboriosam pariatur!
-
-						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, pariatur!</li>
-					</li>
-				</ul>
 			</Card>
-			<Card
-				heading='Lorem Ipsum'
-				subheading='Sit amet consectetur'
-				date='Dec 2022 - Nov 2023'
-				imagePath='/src/assets/about-astro.png'
-				altText='Lorem, ipsum dolor sit'
-				imageClass='h-12 w-auto md:-left-16'
-			/>
 		</Section>
 
+	<!--
 		<Section title='Projects'>
 			<div class='flex flex-col gap-y-3 sm:flex-row sm:gap-x-3 sm:gap-y-0'>
 				<ProjectCard
@@ -212,5 +230,6 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 			<SkillLayout title='Backend' skills={backend} />
 			<SkillLayout title='Others' skills={others} />
 		</Section>
+	-->
 	</div>
 </PageLayout>
